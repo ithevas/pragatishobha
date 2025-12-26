@@ -37,7 +37,7 @@ const Navbar = () => {
               </a>
             ))}
             <Button variant="golden" size="sm" className="group" asChild>
-              <a href="https://wa.me/917310479935" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/917310479935?text=Hi,%20I%20would%20like%20to%20book%20a%20session" target="_blank" rel="noopener noreferrer">
                 <Sparkles className="w-5 h-5 group-hover:rotate-12 transition-transform" />
                 Book Consultation
               </a>
@@ -68,7 +68,7 @@ const Navbar = () => {
                 </a>
               ))}
               <Button variant="golden" size="sm" className="w-fit">
-                <a href="https://wa.me/917310479935" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/917310479935?text=Hi,%20I%20would%20like%20to%20book%20a%20session" target="_blank" rel="noopener noreferrer">
                   Book Consultation
                 </a>
               </Button>

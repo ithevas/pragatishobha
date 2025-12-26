@@ -1,5 +1,6 @@
 import { ScrollText, Heart, Home, Compass, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { link } from 'fs';
 
 const services = [
   {
@@ -8,6 +9,7 @@ const services = [
     description: 'Comprehensive birth chart reading with detailed planetary positions and life predictions.',
     price30: '₹1,070',
     price60: '₹1,700',
+    link: 'https://wa.me/917310479935?text=Hi,%20I%20would%20like%20to%20book%20a%20session%20for%20Kundali%20Analysis.',
   },
   {
     icon: Heart,
@@ -15,6 +17,7 @@ const services = [
     description: 'Combined palm reading and birth chart analysis for deeper insights into your destiny.',
     price30: '₹1,151',
     price60: '₹1,800',
+    link: 'https://wa.me/917310479935?text=Hi,%20I%20would%20like%20to%20book%20a%20session%20for%20Palm%20%26%20Kundali%20Analysis.',
   },
   {
     icon: Home,
@@ -22,6 +25,7 @@ const services = [
     description: 'Guna Milan and comprehensive compatibility analysis for prospective life partners.',
     price30: '₹1,610',
     price60: '₹2,600',
+    link: 'https://wa.me/917310479935?text=Hi,%20I%20would%20like%20to%20book%20a%20session%20for%20Compatibility%20Milan.',
   },
 ];
 
@@ -30,6 +34,7 @@ const premiumPackage = {
   title: 'Premium Package',
   description: 'Complete 60-minute session including Numerology, Palm and Kundali Analysis with personalized Remedies and Life Advices.',
   price: '₹3,500',
+  link: 'https://wa.me/917310479935?text=Hi,%20I%20would%20like%20to%20book%20the%20Premium%20Package.',
 };
 
 const Services = () => {
@@ -97,7 +102,7 @@ const Services = () => {
               </div>
 
               <Button variant="cosmic" size="sm" className="w-full" asChild>
-                <a href="https://wa.me/917310479935" target="_blank" rel="noopener noreferrer">
+                <a href={service.link} target="_blank" rel="noopener noreferrer">
                   Book Now
                 </a>
               </Button>

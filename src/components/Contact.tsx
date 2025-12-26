@@ -6,7 +6,7 @@ import { useToast } from '@/hooks/use-toast';
 const contactInfo = [
   { icon: Instagram, label: 'Instagram', value: '@pragaatishobha' },
   { icon: Youtube, label: 'YouTube', value: 'Pragati Shobha' },
-  { icon: Mail, label: 'Email', value: 'pragtishobha5@gmail.com' },
+  { icon: Mail, label: 'Email', value: 'cosmoswithpragati@gmail.com' },
   { icon: MapPin, label: 'Location', value: 'Noida, Uttar Pradesh, India' },
   { icon: Clock, label: 'Consultation Hours', value: '9:00 AM - 7:00 PM IST' },
 ];

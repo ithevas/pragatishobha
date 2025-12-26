@@ -24,7 +24,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-primary/30 mb-8 animate-float">
+          <div className="inline-flex items-center gap-2 px-4 py-2 mt-8 rounded-full bg-secondary border border-primary/30 mb-8 animate-float">
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-sm text-muted-foreground">
               Vedic Astrology & Jyotish Shastra

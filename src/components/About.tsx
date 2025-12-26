@@ -20,12 +20,12 @@ const About = () => {
               <div className="aspect-[4/5] relative">
                 <img 
                   src={pragtiImage} 
-                  alt="Pragti Shobha - Vedic Astrologer" 
+                  alt="Pragati Shobha - Vedic Astrologer" 
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background/90 to-transparent p-6">
                   <h3 className="font-display text-3xl font-bold text-foreground mb-2">
-                    Pragti Shobha
+                    Pragati Shobha
                   </h3>
                   <p className="text-muted-foreground">
                     Kundali | Palm Reading | Numerology
@@ -48,16 +48,16 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
               <p>
-                I was sixteen when I first picked up a small booklet on palmistry, and that moment quietly changed everything. What began as curiosity soon turned into practice—reading the palms of my teachers and friends at school, testing what I learned, noticing how often it rang true.
+                I was sixteen when I first picked up a small booklet on palmistry, and that moment quietly changed everything. What began as curiosity soon turned into practice reading the palms of my teachers and friends at school, testing what I learned, noticing how often it rang true.
               </p>
               <p>
                 For my graduation, life took me to Banaras, where I found Shiva, or perhaps he found me, and spirituality stopped being an idea and became an experience. That is where I immersed myself fully in Vedic astrology, not casually, but with discipline and devotion.
               </p>
               <p>
-                Over time, I understood something essential about myself: I am a natural empath. I don't just read charts—I feel people, their emotions, their unspoken questions, their inner conflicts. That sensitivity has guided me as much as any shastra or technique.
+                Over time, I understood something essential about myself: I am a natural empath. I don't just read charts I feel people, their emotions, their unspoken questions, their inner conflicts. That sensitivity has guided me as much as any shastra or technique.
               </p>
               <p>
-                Over this journey of nearly a decade, I've been fortunate to learn from traditional Vedic gurus, renowned astrologers, and modern astrology researchers. My work today reflects that journey—rooted in classical Vedic wisdom, informed by Western astrology, and expressed through logical spirituality and modern reasoning that speaks to real life.
+                Over this journey of nearly a decade, I've been fortunate to learn from traditional Vedic gurus, renowned astrologers, and modern astrology researchers. My work today reflects that journey rooted in classical Vedic wisdom, informed by Western astrology, and expressed through logical spirituality and modern reasoning that speaks to real life.
               </p>
             </div>
 
