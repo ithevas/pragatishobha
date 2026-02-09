@@ -76,7 +76,7 @@ const About = () => {
             </div>
 
             <Button variant="golden" size="lg" asChild>
-              <a href="https://wa.me/917310479935" target="_blank" rel="noopener noreferrer">
+              <a href="#services" rel="noopener noreferrer">
                 Schedule a Personal Session
               </a>
             </Button>

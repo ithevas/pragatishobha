@@ -47,7 +47,7 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button variant="golden" size="xl" className="group" asChild>
-              <a href="https://wa.me/917310479935" target="_blank" rel="noopener noreferrer">
+              <a href="#services" rel="noopener noreferrer">
                 <Sparkles className="w-5 h-5 group-hover:rotate-12 transition-transform" />
                 Book Your Consultation
               </a>
