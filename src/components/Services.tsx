@@ -8,7 +8,7 @@ const services = [
     title: 'Kundali Analysis',
     description: 'Comprehensive birth chart reading with detailed planetary positions and life predictions.',
     price30: '₹1,070',
-    price60: '₹1,700',
+    price60: '₹1,900',
     link: 'https://wa.me/917310479935?text=Hi,%20I%20would%20like%20to%20book%20a%20session%20for%20Kundali%20Analysis.',
   },
   {
@@ -16,7 +16,7 @@ const services = [
     title: 'Palm & Kundali Analysis',
     description: 'Combined palm reading and birth chart analysis for deeper insights into your destiny.',
     price30: '₹1,151',
-    price60: '₹1,800',
+    price60: '₹2,060',
     link: 'https://wa.me/917310479935?text=Hi,%20I%20would%20like%20to%20book%20a%20session%20for%20Palm%20%26%20Kundali%20Analysis.',
   },
   {
