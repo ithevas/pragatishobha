@@ -1,6 +1,10 @@
 import { ScrollText, Heart, Home, Compass, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { link } from 'fs';
+
+const bookingLink = (title: string, duration: string) =>
+  `https://wa.me/917310479935?text=${encodeURIComponent(
+    `Hi, I would like to book a ${duration} session for ${title}.`
+  )}`;
 
 const services = [
   {
@@ -9,7 +13,6 @@ const services = [
     description: 'Comprehensive birth chart reading with detailed planetary positions and life predictions.',
     price30: '₹1,070',
     price60: '₹1,900',
-    link: 'https://wa.me/917310479935?text=Hi,%20I%20would%20like%20to%20book%20a%20session%20for%20Kundali%20Analysis.',
   },
   {
     icon: Heart,
@@ -17,7 +20,6 @@ const services = [
     description: 'Combined palm reading and birth chart analysis for deeper insights into your destiny.',
     price30: '₹1,151',
     price60: '₹2,060',
-    link: 'https://wa.me/917310479935?text=Hi,%20I%20would%20like%20to%20book%20a%20session%20for%20Palm%20%26%20Kundali%20Analysis.',
   },
   {
     icon: Home,
@@ -25,7 +27,6 @@ const services = [
     description: 'Guna Milan and comprehensive compatibility analysis for prospective life partners.',
     price30: '₹1,610',
     price60: '₹2,600',
-    link: 'https://wa.me/917310479935?text=Hi,%20I%20would%20like%20to%20book%20a%20session%20for%20Compatibility%20Milan.',
   },
 ];
 
@@ -101,11 +102,26 @@ const Services = () => {
                 </div>
               </div>
 
-              <Button variant="cosmic" size="sm" className="w-full" asChild>
-                <a href={service.link} target="_blank" rel="noopener noreferrer">
-                  Book Now
-                </a>
-              </Button>
+              <div className="grid grid-cols-2 gap-3">
+                <Button variant="cosmic" size="sm" asChild>
+                  <a
+                    href={bookingLink(service.title, '30-minute')}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Book 30 min
+                  </a>
+                </Button>
+                <Button variant="cosmic" size="sm" asChild>
+                  <a
+                    href={bookingLink(service.title, '60-minute')}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Book 60 min
+                  </a>
+                </Button>
+              </div>
             </div>
           ))}
         </div>
@@ -144,7 +160,7 @@ const Services = () => {
                   {premiumPackage.price}
                 </span>
                 <Button variant="cosmic" asChild>
-                  <a href="https://wa.me/917310479935" target="_blank" rel="noopener noreferrer">
+                  <a href={premiumPackage.link} target="_blank" rel="noopener noreferrer">
                     Book Now
                   </a>
                 </Button>

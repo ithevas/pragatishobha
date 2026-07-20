@@ -4,9 +4,9 @@ import { useState } from 'react';
 import { useToast } from '@/hooks/use-toast';
 
 const contactInfo = [
-  { icon: Instagram, label: 'Instagram', value: '@pragaatishobha' },
-  { icon: Youtube, label: 'YouTube', value: 'Pragati Shobha' },
-  { icon: Mail, label: 'Email', value: 'cosmoswithpragati@gmail.com' },
+  { icon: Instagram, label: 'Instagram', value: '@pragaatishobha', href: 'https://www.instagram.com/pragaatishobha' },
+  { icon: Youtube, label: 'YouTube', value: 'Pragati Shobha', href: 'https://www.youtube.com/@pragatishobha' },
+  { icon: Mail, label: 'Email', value: 'cosmoswithpragati@gmail.com', href: 'mailto:cosmoswithpragati@gmail.com' },
   { icon: MapPin, label: 'Location', value: 'Noida, Uttar Pradesh, India' },
   { icon: Clock, label: 'Consultation Hours', value: '9:00 AM - 7:00 PM IST' },
 ];
@@ -55,7 +55,18 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="text-sm text-muted-foreground">{item.label}</div>
-                    <div className="text-foreground font-medium">{item.value}</div>
+                    {item.href ? (
+                      <a
+                        href={item.href}
+                        target={item.href.startsWith('mailto:') ? undefined : '_blank'}
+                        rel="noopener noreferrer"
+                        className="text-foreground font-medium hover:text-primary transition-colors"
+                      >
+                        {item.value}
+                      </a>
+                    ) : (
+                      <div className="text-foreground font-medium">{item.value}</div>
+                    )}
                   </div>
                 </div>
               ))}
