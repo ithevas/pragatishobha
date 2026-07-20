@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Menu, X, Star, Sparkles } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
@@ -19,8 +19,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2">
-            <Star className="w-8 h-8 text-primary animate-pulse-slow" />
-            <span className="font-display text-2xl font-bold text-primary">
+            <span className="font-display text-2xl font-bold text-primary [-webkit-text-stroke:0.6px_hsl(var(--primary))]">
               Pragati Shobha
             </span>
           </a>
@@ -48,6 +47,8 @@ const Navbar = () => {
           <button
             className="md:hidden text-foreground"
             onClick={() => setIsOpen(!isOpen)}
+            aria-label={isOpen ? 'Close menu' : 'Open menu'}
+            aria-expanded={isOpen}
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>

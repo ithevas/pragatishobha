@@ -89,38 +89,38 @@ const Services = () => {
                 {service.description}
               </p>
 
-              {/* Price */}
-              <div className="flex items-center gap-4 mb-6">
-                <div className="text-center">
-                  <span className="block text-xs text-muted-foreground mb-1">30 min</span>
-                  <span className="text-xl font-display font-bold text-primary">{service.price30}</span>
-                </div>
-                <div className="h-8 w-px bg-border" />
-                <div className="text-center">
-                  <span className="block text-xs text-muted-foreground mb-1">60 min</span>
-                  <span className="text-xl font-display font-bold text-primary">{service.price60}</span>
-                </div>
-              </div>
-
+              {/* Price & Booking */}
               <div className="grid grid-cols-2 gap-3">
-                <Button variant="cosmic" size="sm" asChild>
-                  <a
-                    href={bookingLink(service.title, '30-minute')}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Book 30 min
-                  </a>
-                </Button>
-                <Button variant="cosmic" size="sm" asChild>
-                  <a
-                    href={bookingLink(service.title, '60-minute')}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Book 60 min
-                  </a>
-                </Button>
+                <div className="flex flex-col items-center gap-3">
+                  <div className="text-center">
+                    <span className="block text-xs text-muted-foreground mb-1">30 min</span>
+                    <span className="text-xl font-body font-bold text-primary">{service.price30}</span>
+                  </div>
+                  <Button variant="cosmic" size="sm" className="w-full" asChild>
+                    <a
+                      href={bookingLink(service.title, '30-minute')}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Book 30 min
+                    </a>
+                  </Button>
+                </div>
+                <div className="flex flex-col items-center gap-3">
+                  <div className="text-center">
+                    <span className="block text-xs text-muted-foreground mb-1">60 min</span>
+                    <span className="text-xl font-body font-bold text-primary">{service.price60}</span>
+                  </div>
+                  <Button variant="cosmic" size="sm" className="w-full" asChild>
+                    <a
+                      href={bookingLink(service.title, '60-minute')}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Book 60 min
+                    </a>
+                  </Button>
+                </div>
               </div>
             </div>
           ))}
@@ -156,7 +156,7 @@ const Services = () => {
 
               {/* Price & CTA */}
               <div className="flex flex-col items-center gap-3 shrink-0">
-                <span className="text-3xl font-display font-bold text-primary">
+                <span className="text-3xl font-body font-bold text-primary">
                   {premiumPackage.price}
                 </span>
                 <Button variant="cosmic" asChild>

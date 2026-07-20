@@ -1,8 +1,8 @@
+/* Fonts are loaded via <link> tags in index.html — an @import here comes after
+   the @tailwind directives and is ignored by browsers per the CSS spec. */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Raleway:wght@300;400;500;600&display=swap');
 
 @layer base {
   :root {

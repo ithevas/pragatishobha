@@ -1,5 +1,3 @@
-import { Star, Facebook, Instagram, Youtube, Twitter } from 'lucide-react';
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 

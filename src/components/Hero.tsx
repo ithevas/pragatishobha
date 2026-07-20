@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { Sparkles, Phone, Instagram, Youtube } from 'lucide-react';
+import { Sparkles, Instagram, Youtube } from 'lucide-react';
 import StarField from './StarField';
 import heroImage from '@/assets/hero-cosmic.jpg';
 
@@ -53,13 +53,13 @@ const Hero = () => {
               </a>
             </Button>
             <Button variant="cosmic" size="xl" asChild>
-              <a href="https://www.instagram.com/pragaatishobha" target='_blank'>
+              <a href="https://www.instagram.com/pragaatishobha" target="_blank" rel="noopener noreferrer" aria-label="Pragati Shobha on Instagram">
                 <Instagram className="w-5 h-5" />
                 Instagram
               </a>
             </Button>
             <Button variant="cosmic" size="xl" asChild>
-              <a href="https://www.youtube.com/@pragatishobha" target='_blank'>
+              <a href="https://www.youtube.com/@pragatishobha" target="_blank" rel="noopener noreferrer" aria-label="Pragati Shobha on YouTube">
                 <Youtube className="w-5 h-5" />
                 Youtube
               </a>
@@ -69,17 +69,17 @@ const Hero = () => {
           {/* Trust Indicators */}
           <div className="mt-16 flex flex-wrap items-center justify-center gap-8 text-muted-foreground">
             <div className="text-center">
-              <div className="text-3xl font-display font-bold text-primary">9+</div>
+              <div className="text-3xl font-body font-bold text-primary">9+</div>
               <div className="text-sm">Years Experience</div>
             </div>
             <div className="w-px h-12 bg-border hidden sm:block" />
             <div className="text-center">
-              <div className="text-3xl font-display font-bold text-primary">3000+</div>
+              <div className="text-3xl font-body font-bold text-primary">3000+</div>
               <div className="text-sm">Readings Done</div>
             </div>
             <div className="w-px h-12 bg-border hidden sm:block" />
             <div className="text-center">
-              <div className="text-3xl font-display font-bold text-primary">2500+</div>
+              <div className="text-3xl font-body font-bold text-primary">2500+</div>
               <div className="text-sm">Happy Clients</div>
             </div>
           </div>

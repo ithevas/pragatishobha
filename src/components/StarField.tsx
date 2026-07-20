@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useMemo } from 'react';
 
 interface Star {
   id: number;
@@ -10,29 +10,25 @@ interface Star {
 }
 
 const StarField = () => {
-  const [stars, setStars] = useState<Star[]>([]);
-
-  useEffect(() => {
-    const generatedStars: Star[] = [];
-    for (let i = 0; i < 50; i++) {
-      generatedStars.push({
+  const stars = useMemo<Star[]>(
+    () =>
+      Array.from({ length: 50 }, (_, i) => ({
         id: i,
         left: `${Math.random() * 100}%`,
         top: `${Math.random() * 100}%`,
         size: Math.random() * 3 + 1,
         delay: `${Math.random() * 3}s`,
         duration: `${Math.random() * 2 + 2}s`,
-      });
-    }
-    setStars(generatedStars);
-  }, []);
+      })),
+    []
+  );
 
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
       {stars.map((star) => (
         <div
           key={star.id}
-          className="absolute rounded-full bg-star animate-twinkle"
+          className="absolute rounded-full bg-star motion-safe:animate-twinkle"
           style={{
             left: star.left,
             top: star.top,
