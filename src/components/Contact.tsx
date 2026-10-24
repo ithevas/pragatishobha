@@ -1,7 +1,7 @@
 import { Mail, MapPin, Clock, Instagram, Youtube } from 'lucide-react';
 
 const contactInfo = [
-  { icon: Instagram, label: 'Instagram', value: '@pragaatishobha', href: 'https://www.instagram.com/pragaatishobha' },
+  { icon: Instagram, label: 'Instagram', value: '@pragatishobha', href: 'https://www.instagram.com/pragatishobha' },
   { icon: Youtube, label: 'YouTube', value: 'Pragati Shobha', href: 'https://www.youtube.com/@pragatishobha' },
   { icon: Mail, label: 'Email', value: 'cosmoswithpragati@gmail.com', href: 'mailto:cosmoswithpragati@gmail.com' },
   { icon: MapPin, label: 'Location', value: 'Noida, Uttar Pradesh, India' },
