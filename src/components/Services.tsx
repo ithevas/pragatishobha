@@ -11,22 +11,22 @@ const services = [
     icon: Heart,
     title: 'Palm & Kundali Analysis',
     description: 'Combined palm reading and birth chart analysis for deeper insights into your destiny.',
-    price30: '₹1,610',
-    price60: '₹2,510',
+    price30: '₹1,450',
+    price60: '₹2,250',
   },
   {
     icon: Home,
     title: 'Compatibility Milan',
     description: 'Guna Milan and comprehensive compatibility analysis for prospective life partners.',
-    price30: '₹2,150',
-    price60: '₹3,050',
+    price30: '₹1,850',
+    price60: '₹2,850',
   },
   {
     icon: ScrollText,
     title: 'Life Guidance',
     description: 'A judgement-free, non-astrological space to discuss life decisions, relationships and challenges.',
-    price30: '₹2,150',
-    price60: '₹3,050',
+    price30: '₹1,850',
+    price60: '₹2,850',
   },
 ];
 
@@ -34,7 +34,7 @@ const premiumPackage = {
   icon: Compass,
   title: 'Premium Package',
   description: 'Complete 60-minute session including Numerology, Palm and Kundali Analysis with personalized Remedies and Life Advices.',
-  price: '₹4,400',
+  price: '₹3,950',
   link: 'https://wa.me/917310479935?text=Hi,%20I%20would%20like%20to%20book%20the%20Premium%20Package.',
 };
 
